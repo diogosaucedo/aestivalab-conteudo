@@ -101,7 +101,7 @@ Use o `repita` quando você precisa que uma ação ocorra ao menos uma vez, tipi
 graph TD
     A[Início] --> B["Escreva 'Deseja continuar? (S/N)'"];
     B --> C[/Leia resposta/];
-    C --> D{resposta = "S" OU resposta = "N"?};
+    C --> D{"resposta = 'S' OU resposta = 'N'?"};
     D -- Não (Falso) --> B;
     D -- Sim (Verdadeiro) --> E[Fim];
 ```
