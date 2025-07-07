@@ -49,11 +49,8 @@ O **índice** é o número que identifica a posição de cada elemento dentro do
 **Visualizando um vetor `notas` de 5 posições:**
 
 ```mermaid
-graph TD
-    subgraph "vetor notas"
-        direction LR
-        n1(Posição 1) -- "Valor: 8.5" --> n2(Posição 2) -- "Valor: 7.0" --> n3(Posição 3) -- "Valor: 9.5" --> n4(Posição 4) -- "Valor: 6.0" --> n5(Posição 5) -- "Valor: 10.0"
-    end
+graph LR
+    n1["Posição 1<br>Valor: 8.5"] --> n2["Posição 2<br>Valor: 7.0"] --> n3["Posição 3<br>Valor: 9.5"] --> n4["Posição 4<br>Valor: 6.0"] --> n5["Posição 5<br>Valor: 10.0"]
 ```
 
 Para acessar o valor `9.5`, que está na terceira posição, usamos `notas[3]`.
@@ -169,7 +166,7 @@ graph TD
     B --> C[achou = FALSO]
     C --> D[i = 1]
     D --> E{i <= tamanho_vetor E NAO achou?};
-    E -- Sim --> F{vetor[i] = valor_procurado?};
+    E -- Sim --> F{"vetor[i] = valor_procurado?"};
     F -- Sim --> G[achou = VERDADEIRO];
     G --> H[posicao = i];
     F -- Não --> I[i = i + 1];
