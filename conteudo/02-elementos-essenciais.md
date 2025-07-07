@@ -165,7 +165,7 @@ graph TD
     C --> D[/Leia peso/];
     D --> E["Escreva 'Digite sua altura (em metros):'"];
     E --> F[/Leia altura/];
-    F --> G[imc = peso / (altura * altura)];
+    F --> G["imc = peso / (altura * altura)"];
     G --> H["Escreva 'Seu IMC é: '", imc];
     H --> I[Fim];
 ```
