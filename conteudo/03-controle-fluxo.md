@@ -145,7 +145,7 @@ graph TD
     A[Início] --> B[/Leia media_final/];
     B --> C{media_final >= 7.0?};
     C -- Sim --> D["Escreva 'APROVADO'"];
-    C -- Não --> E{media_final >= 5.0?}; // Decisão aninhada!
+    C -- Não --> E{"media_final >= 5.0?"};
     E -- Sim --> F["Escreva 'RECUPERAÇÃO'"];
     E -- Não --> G["Escreva 'REPROVADO'"];
     D --> H[Fim];
